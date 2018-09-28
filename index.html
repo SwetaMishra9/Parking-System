@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Automatic Parking System</title>
+<style>
+body
+{
+  color:black;
+}
+h1{
+  text-shadow: 5px 5px 5px blue;
+}
+
+div.background
+{
+ float:center;
+  width:900px;
+  height:600px;
+  background: url(building1.jpg) repeat;
+  border: 2px solid black;
+}
+div.transbox
+{
+  float:center;
+  width: 506px;
+  height: 400px;
+  margin: 50px 160px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity:0.7;
+  filter:alpha(opacity=70);
+}
+div.transbox p
+{
+  margin: 15px 10px;  
+  font-weight: bold;
+  color:#000000;
+  }
+</style>
+<script>
+function loginval()
+{
+//alert("function");
+  var usr=document.frm.id.value;
+  var usrp=document.frm.psw.value;
+  //alert(""+usr+"....................."+usrp);
+  if(usr=="" ||usrp=="")
+  {
+    alert("Please enter id and password");
+	return false;
+  }
+  return true;
+}
+</script>
+</head>
+<body background="building1.jpg" >
+
+<center>
+<!--<div class="background">-->
+
+<br />
+<br />
+<br  />
+<br />
+<br />
+
+<div  style=" border-color:#333333; width:700px; border:0px solid; background:#FFFFFF  ">
+<br /><br />
+<h2>
+Welcome To <br />Auto Parking System
+</h2>
+<hr />
+<div  style="border:1px;" align="center">
+
+
+
+<form name="frm"  method="post" action="index2.html">
+<table border="0" cellpadding="3" cellspacing="3" style="border:0px;">
+<tr><th colspan="2">Login</th></tr>
+<tr><th>ID:-</th><th><input type="text" name="id" value=""></th></tr>
+<tr style="height:20"><th>PASSWORD:-</th><th><input type="password" name="psw" value=""></th></tr><br />
+<tr style="height:20"><th colspan="2"><center><input type="submit" value="submit" onclick=" return loginval();"></center></th></tr>
+</table>
+</form>
+</div>
+<br />
+<br /><br />
+</div>
+</center>
+
+</body>
+</html>
